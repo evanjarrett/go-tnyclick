@@ -45,8 +45,8 @@ jobs:
         file: ./Dockerfile
         platforms: linux/amd64,linux/arm64 
         tags: |
-          ghcr.io/${{ github.repository }}/tnyclick:latest
-          ghcr.io/${{ github.repository }}/tnyclick:${{ github.sha }}
+          ghcr.io/${{ github.repository }}:latest
+          ghcr.io/${{ github.repository }}:${{ github.sha }}
         annotations: |
           "org.opencontainers.image.description=A simple Go application for image uploading."
 
