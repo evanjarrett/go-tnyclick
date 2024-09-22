@@ -2,7 +2,7 @@
 FROM golang:1.20.6 AS builder
 
 WORKDIR /go/src/tnyclick
-COPY tnyclick .
+COPY . .
 
 RUN CGO_ENABLED=0 GOOS=linux go build -o app .
 
