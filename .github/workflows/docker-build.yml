@@ -41,6 +41,8 @@ jobs:
         tags: |
           ghcr.io/${{ github.repository }}/tnyclick:latest
           ghcr.io/${{ github.repository }}/tnyclick:${{ github.sha }}
+        annotations: |
+          "org.opencontainers.image.description=A simple Go application for image uploading."
 
     - name: Image digest
       run: echo "Image pushed with digest ${{ steps.docker_build.outputs.digest }}"
